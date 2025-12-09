@@ -1,4 +1,4 @@
-# TQx: Towards a text-based quantitative and explainable histopathology image analysis (MICCAI 2024 Early Accept)
+# Towards a Text-Based Quantitative and Explainable Histopathology Image Analysis & LMM-based Report Alignment for Clinical Interpretability
 
 
 ## Overview
@@ -22,7 +22,7 @@ Implementation of the paper:
 </ul>
 
 ### Model
-QUILT-1M: https://huggingface.co/wisdomik/QuiltNet-B-16
+QUILTNet: https://huggingface.co/wisdomik/QuiltNet-B-16
 
 ### Word-of-interest (WoI)
 All pathology terms are stored in `entity.csv` with 3 columns:
@@ -37,17 +37,10 @@ The text-based features of four datasets can be found in `result` folder. Each .
 For example: `all_img_features_sorted.pkl` store visual embeddings that are created from a visual encoder. `image_text_representation.pkl` in `Colon/Neoplastic_Process_1000/` stores text-based embeddings when the filter is `Neoplastic_Process`
 Due to the size limitation, please find the Bladder results at [here](https://drive.google.com/drive/folders/14zNPbc-L9EtEocHutuMK78xg8ZFBhc98?usp=drive_link).
 
-Overview of paper:
-<ul>
-  <li>Compute vision embeddings of each image</li>
-  <li>For each of four word of interest pools, ompute text embeddings of each term</li>
-  <li>Calculate rank of each term per image using similarity score</li>
-  <li>Find average rank of each term in each pool</li>
-  <li>For each pool, choose M terms with best average rank</li>
-  <li>For each image, use similarity to embeddings of the M terms,normalize to determine weight</li>
-  <li>Each image's new text-based embedding is made up of sum of weight * text embedding</li>
-  <li>Since we know the terms it's explainable</li>
-</ul>
+## How to run the code
+If the grader opens the CSCE 55603 TQx Modifications.ipynb file in Google Colab, they can press "Run all" and the code will generate silhouette coefficients (table 1), clustering results (figure 2), bar plots (figure 3), and classification results (table 2) for the BACH dataset. 
+
+they need to click the last link in the original GitHub repository's README file to have it shared to their Google Drive. Then, ....
 
 Objective:
 Understand and reproduce text-based quantitative histopathology results. Done
