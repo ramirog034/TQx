@@ -45,7 +45,7 @@ Improvement:
 Add large multimodal model (LMM)-based pathology report alignment for clinical interpretability.
 
 ## How to run the code
-If the grader opens the CSCE 55603 TQx Modifications.ipynb file in Google Colab, they can press "Run all" and the code will generate silhouette coefficients (table 1), clustering results (figure 2), bar plots (figure 3), and classification results (table 2) for the BACH dataset.
+If the grader opens the CSCE 55603 TQx Modifications.ipynb file in Google Colab, they can press "Run all" and the code will generate silhouette coefficients (table 1), clustering results (figure 2), bar plots (figure 3), and classification results (table 2) for the BACH dataset. We recommend only testing 1 dataset because it takes over 1hr to generate all results for all datasets. It also uses GPU if it's available.
 
 To test all 4 datasets (BACH, Colon, WSSS4LUAD, Bladder):
 
