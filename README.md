@@ -1,5 +1,5 @@
 # Towards a Text-Based Quantitative and Explainable Histopathology Image Analysis & LMM-based Report Alignment for Clinical Interpretability
-
+> Md Taef Uddin Nadim, Ramiro Gonzalez, and Jonathan Tiner 
 
 ## Overview
 
@@ -37,13 +37,18 @@ The text-based features of four datasets can be found in `result` folder. Each .
 For example: `all_img_features_sorted.pkl` store visual embeddings that are created from a visual encoder. `image_text_representation.pkl` in `Colon/Neoplastic_Process_1000/` stores text-based embeddings when the filter is `Neoplastic_Process`
 Due to the size limitation, please find the Bladder results at [here](https://drive.google.com/drive/folders/14zNPbc-L9EtEocHutuMK78xg8ZFBhc98?usp=drive_link).
 
-## How to run the code
-If the grader opens the CSCE 55603 TQx Modifications.ipynb file in Google Colab, they can press "Run all" and the code will generate silhouette coefficients (table 1), clustering results (figure 2), bar plots (figure 3), and classification results (table 2) for the BACH dataset. 
-
-they need to click the last link in the original GitHub repository's README file to have it shared to their Google Drive. Then, ....
-
+## Our goals
 Objective:
-Understand and reproduce text-based quantitative histopathology results. Done
+Understand and reproduce text-based quantitative histopathology results.
 
 Improvement:
 Add large multimodal model (LMM)-based pathology report alignment for clinical interpretability.
+
+## How to run the code
+If the grader opens the CSCE 55603 TQx Modifications.ipynb file in Google Colab, they can press "Run all" and the code will generate silhouette coefficients (table 1), clustering results (figure 2), bar plots (figure 3), and classification results (table 2) for the BACH dataset.
+
+To test all 4 datasets (BACH, Colon, WSSS4LUAD, Bladder):
+
+1. Click the link at the bottom of the original TQx GitHub repo found at https://github.com/QuIIL/TQx to receive a shared copy of the Bladder .pkl and .txt files in your Drive
+2. Uncomment the last two code cells in the "Mount Drive" section to mount Google Drive and copy the shared files into the cloned repo
+3. Uncomment the rest of the code in the first code cell (the if-else statement) in the "T-SNE" section. If steps 1 and 2 were performed correctly, the code will generate the results for all 4 datasets. Otherwise, this step will only generate results for the BACH, Colon, WSSS4LUAD datasets.
