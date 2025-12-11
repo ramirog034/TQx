@@ -52,3 +52,7 @@ To test all 4 datasets (BACH, Colon, WSSS4LUAD, Bladder):
 1. Click the link at the bottom of the original TQx GitHub repo found at https://github.com/QuIIL/TQx to receive a shared copy of the Bladder .pkl and .txt files in your Drive
 2. Uncomment the last two code cells in the "Mount Drive" section to mount Google Drive and copy the shared files into the cloned repo
 3. Uncomment the rest of the code in the first code cell (the if-else statement) in the "T-SNE" section. If steps 1 and 2 were performed correctly, the code will generate the results for all 4 datasets. Otherwise, this step will only generate results for the BACH, Colon, WSSS4LUAD datasets.
+
+## Enhancement Portion
+This link contains the demo videos of the enhancements 1 and 2. Each respective folder has its own README file giving instructions to run the enhancement files.
+https://uark-my.sharepoint.com/:f:/g/personal/nadim_uark_edu/IgD2lR1gTI69S5OQrUB9gfF9ARBM6jm7WNw5n7LexZdFqKY?e=OLdiEb
